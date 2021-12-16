@@ -1,0 +1,20 @@
+<div class="container">
+  <ul class="nav nav-tabs">  
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/line-chart">Growth of Stock Market in last 6 Months</a>
+    </li>   
+  </ul>
+  
+</div>
+<div>
+    <div style="display:block" class="line-chart">
+      <canvas baseChart
+              [datasets]="lineChartData"
+              [labels]="lineChartLabels"
+              [legend]="lineChartLegend"
+              [type] ="lineChartType">
+      </canvas>      
+    </div>
+  </div>
+
+ 
